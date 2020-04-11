@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import CountryCard from './CountryCard';
+import CountryCard from './Components/CountryCard';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+  <App />
     <CountryCard />
   </React.StrictMode>,
   document.getElementById('root')

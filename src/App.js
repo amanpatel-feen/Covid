@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Casecard from './Components/Casecard/CaseCard'
 
 function App() {
   return (
     <div className="App">
-    hello
-      </div>
+    <Navbar />
+    <Casecard />
+    </div>
   );
 }
 

@@ -1,0 +1,21 @@
+.CaseCard{
+    width:15%;
+    height:15%;
+    margin:10px;
+    padding:0px 10px;
+    border:1px solid white;
+    border-radius: 7%;
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    /* max-width:80%; */
+    align-items:center;
+}
+
+.Card{
+    display: flex;
+}
+
+.img{
+    align-items: center;
+}
