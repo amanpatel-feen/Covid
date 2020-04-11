@@ -8,17 +8,18 @@ import Graph1 from '../../assets/Graph 1.svg';
 import Graph2 from '../../assets/Graph 2.svg';
 import Graph3 from '../../assets/Graph 3.svg';
 
+
  class Casecard extends Component {
-   
-    state = {
-        data : []
-        
+    constructor(props){
+        super(props);
+        this.state={data:null};
     }
 
     componentDidMount(){
         fetch('https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search').then((response)=>{return response.json();}).then((data)=>{
           this.setState({data:data});  
         });
+        console.log(data);
         
     }
    
