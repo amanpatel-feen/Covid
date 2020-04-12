@@ -1,0 +1,88 @@
+.Card {
+  padding: 10px 60px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #ccccccfb;
+  display: inline-block;
+  text-align: left;
+  border-radius: 20px;
+  line-height: 35px;
+  background-color: #fff;
+}
+
+@media (max-width: 794px) {
+  .Card {
+    padding: 10px 65px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 764px) {
+  .Card {
+    padding: 10px 55px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+  }
+}
+@media (max-width: 704px) {
+  .Card {
+    padding: 10px 50px;
+    margin: 8px;
+    box-shadow: 4px 4px 4px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 663px) {
+  .Card {
+    padding: 10px 45px;
+    margin: 7px;
+    box-shadow: 3px 3px 3px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 602px) {
+  .Card {
+    padding: 10px 70px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 522px) {
+  .Card {
+    padding: 10px 80px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #ccccccfb;
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 15px;
+    background-color: #fff;
+  }
+}

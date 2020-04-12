@@ -3,12 +3,13 @@ import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Casecard from './Components/Casecard/CaseCard'
+import Allcases from './Components/AllCases'
 
 function App() {
   return (
     <div className="App">
     <Navbar />
-    <Casecard />
+    <Allcases />
     </div>
   );
 }
