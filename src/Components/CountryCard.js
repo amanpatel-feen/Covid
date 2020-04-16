@@ -33,10 +33,10 @@ class Card extends React.Component{
                
 class CountryCard extends React.Component{
     
-    constructor(props){
-        super(props);
-        this.state={data:null};
-    }
+        constructor(props){
+            super(props);
+            this.state={data:null};
+        }
     
     componentDidMount(){
         fetch('https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search').then((response)=>{return response.json();}).then((data)=>{
@@ -51,7 +51,7 @@ class CountryCard extends React.Component{
             }
             
         return (
-            <div style={{overflowY:"scroll",overflowX:"hidden",width:"320px",height: "412px",padding:"10px",background: '#FFFFFF 0% 0% no-repeat padding-box',boxShadow: '0px 3px 12px #1425401A',borderRadius:'8px',margin:"15px"}}>{ele}</div>
+            <div style={{overflowY:"scroll",overflowX:"hidden",width:"340px",height: "480px",padding:"10px",background: '#FFFFFF 0% 0% no-repeat padding-box',boxShadow: '0px 3px 12px #1425401A',borderRadius:'8px',margin:"15px"}}>{ele}</div>
                );
     }
 }

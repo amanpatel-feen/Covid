@@ -7,8 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-  <App />
-    <CountryCard />
+  <App country="IN" />
   </React.StrictMode>,
   document.getElementById('root')
 );

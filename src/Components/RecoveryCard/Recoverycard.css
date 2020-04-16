@@ -1,12 +1,12 @@
 .wrapper-recovery{
-    top: 87px;
-    left: 1043px;
-    width: 289px;
     height: 320px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 20px #1425401A;
     border-radius: 8px;
     opacity: 1;
+    margin-top: 20px;
+    padding: 10px;
+    display: inline;
 }
 .outer-circle{
     width:189px;
@@ -14,16 +14,16 @@
     background-color: #f5f5f5;
     position: relative;
     border-radius: 50%;
-    /* top: 154px; */
     margin: auto;
+    
     
 }
 .inner-circle{
     position: relative;
     width:50%;
     height:50%;
-    top: 3%;
-    left: 3%;
+    top: 25%;
+    left: 25%;
     background-color: white;
     /* margin-top: 150px; */
     /* left: 1164px; */
@@ -38,10 +38,11 @@
     padding-top:10px;
     font-weight: bold;
     color:rgb(85, 83, 83);
+    margin-top: 20px;
 }
 .main-heading{
     color:black;
-    margin:0
+    margin: 18px;
 }
 .h3{
     color:#06BA90;

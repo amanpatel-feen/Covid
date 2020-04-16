@@ -1,21 +1,22 @@
 import React from "react";
 import "./card.css";
+import bg from '../../assets/BG.svg'
 
-const Card = ({ title = "cases", src = "sourcse", value = "nil" }) => {
+const Card = ({ title = "cases", src = "source",src1 = "sources", value = "nil" }) => {
   return (
-    <div className="Card">
-    <div>
+    <div className="Card" >
+    <div className="CardData">
     <span>
-        <p>
+        <span>
           {title} <img style={{ width: "20px" }} src={src} alt="logo" />
-        </p>
+        </span>
       </span>
       <span>
-        <h2> {value} </h2>
+        <h2 className="h2"> {value} </h2>
       </span>
     </div>
     <div>
-      <img style={{ width: "20px" }} src={src} alt="logo" />
+      <img  src={src1} alt="logo" />
     </div>
       
     </div>

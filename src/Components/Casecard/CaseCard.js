@@ -29,9 +29,8 @@ import { axisBottom } from 'd3';
    componentDidMount(){
        axios.get('https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search')
        .then(response => {
-            const data1=response.data.json();
+            const data1= response=json()
             this.setState({data:data1})})
-            console.log(data)
    }
 
 render(){

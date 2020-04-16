@@ -1,0 +1,35 @@
+.change-btn{
+	width: 86px;
+	height: 30px;
+	background: #BBBBBB;
+	border-radius: 8px;
+	opacity: 1;
+	font: Medium 12px/15px Montserrat;
+	letter-spacing: 0px;
+	color: #30313A;
+	border:0px;
+	opacity: 1;
+}
+.graph-container{
+	width:520px;
+	height:384px;
+	padding:5px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 5px 20px #1425401A;
+	border-radius: 8px;
+	opacity: 1;
+}
+#title{
+	width: 131px;
+	height: 22px;
+	text-align: left;
+	font: SemiBold 18px/22px Montserrat;
+	letter-spacing: 0px;
+	color: #30313A;
+	opacity: 1;
+}
+.chartdiv{
+	width:100%;
+	height:80%;
+	magrin:5px;
+}

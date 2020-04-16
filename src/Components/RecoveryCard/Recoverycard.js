@@ -46,7 +46,7 @@ class Recovery extends Component {
                         </div>
                     </div>
                     <div className="recovery-data">
-                        <div>{this.state.data.cases} Affected</div>
+                        <div>{this.state.data.cases} Affected |</div>
                         <div>{this.state.data.recovered} Recovered</div>
                     </div>
                 </div>
