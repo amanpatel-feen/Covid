@@ -34,7 +34,7 @@ export const fetchCountry = async (country, status) => {
 };
 
 //get all global cases
-let globalCases = "https://corona.lmao.ninja/all";
+let globalCases = "https://corona.lmao.ninja/v2/all";
 
 export const fetchGlobalCases = async () => {
   try {

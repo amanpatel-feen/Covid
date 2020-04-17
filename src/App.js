@@ -65,14 +65,13 @@ class App extends React.Component{
 					<MapCard handler = {this.handler}/>
        				
 					</div>
-					
+          
 
 					</div>
           
 					<Recovery />
 					</div>
           <GraphCard country={this.state.country}/>
-
 					</div>
         			
     			

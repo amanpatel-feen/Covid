@@ -34,13 +34,27 @@ class GraphCard extends React.Component{
     		let dateAxis = chart.xAxes.push(new am4charts.DateAxis());
     		let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
     		dateAxis.renderer.grid.template.location = 0;
+		dateAxis.title.text='Date';
 		valueAxis.tooltip.disabled = true;
     		valueAxis.renderer.minWidth = 35;
+    		valueAxis.title.text='Cases';
 		let series = chart.series.push(new am4charts.LineSeries());
     		series.dataFields.dateX = "date";
     		series.dataFields.valueY = "value";
     		series.tooltipText = "{valueY.value}";
+    		series.strokeWidth=3;
+    		let bullet = series.bullets.push(new am4charts.CircleBullet());
+    		bullet.circle.radius=4;
+    		bullet.fill=am4core.color('#A00');
+    		bullet.circle.stroke=am4core.color('#fff');
+    		bullet.circle.strokeWidth=1;
+    		bullet.horizontalCenter='middle';
+    		bullet.verticleCenter='middle';
+ 		let hs = bullet.states.create('hover');
+ 		hs.properties.scale = 1.8;	
     		chart.cursor = new am4charts.XYCursor();
+    		series.tensionX=0.9;
+    		
 		let scrollbarX = new am4charts.XYChartScrollbar();
     		scrollbarX.series.push(series);
     		chart.scrollbarX = scrollbarX;
@@ -54,10 +68,28 @@ class GraphCard extends React.Component{
 			this.chart.data=this.data_mode[mode];
 	}
 	
+	change_color=(e,mode)=>{
+		for(let i=0;i<e.length;i++){
+			if(i===mode){
+				e[i].style.background='#222831';
+				e[i].style.color='#eeeeee';
+			}
+			else{
+				e[i].style.background='#eeeeee';
+				e[i].style.color='#222831';
+			}
+		}
+	}
 	
-	confirmed = ()=>{this.switchMode('confirmed');}
-	recovered = ()=>{this.switchMode('recovered');}
-	deceased = ()=>{this.switchMode('deceased');}
+	confirmed = ()=>{this.switchMode('confirmed');
+		this.change_color(document.getElementsByClassName('change-btn'),0);
+	}
+	recovered = ()=>{this.switchMode('recovered');
+		this.change_color(document.getElementsByClassName('change-btn'),1);
+	}
+	deceased = ()=>{this.switchMode('deceased');
+		this.change_color(document.getElementsByClassName('change-btn'),2);
+	}
 	
 	componentDidMount(){
 	    	fetch('https://api.thevirustracker.com/free-api?countryTimeline='+this.props.country)
@@ -65,7 +97,7 @@ class GraphCard extends React.Component{
 	    	.then((data)=>{
 			this.updateData(data);
 			this.createChart();
-			///console.log(data);
+			this.confirmed();
 	    });
 	}
 
@@ -88,13 +120,14 @@ class GraphCard extends React.Component{
 	render(){
 		return (
 		<div className='graph-container'>
-		<div className='controls'>
+		<div>
 		<h1 id="title">Spread Trends</h1>
+		<div className='controls'>
 		<button className='change-btn' onClick ={this.confirmed}>Confirmed</button>
 		<button className='change-btn' onClick={this.recovered}>Recovered</button>
 		<button className='change-btn' onClick={this.deceased}>Deceased</button>
-		</div>
-		 <div className='chartdiv'></div>  
+		</div></div>
+		<div className='chartdiv'></div>  
 		</div>
 		);
   	 }

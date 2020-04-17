@@ -1,59 +1,67 @@
 import React from 'react';
 import Up from '../assets/Up.svg';
-import Down from '../assets/Down.svg';
-class Card extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-                affectedStats:this.props.affectedStats,
-                recoveredStats:this.props.recoveredStats,
-                slope:this.props.slope
-        };
-    }
-    getSnapshotBeforeUpdate(prevProps,prevState){
-        if((this.state.recoveredStats-prevState.recoveredStats)>(this.state.affectedStats-prevState.affectedStats))
-            this.setState({slop:Down})
-        else
-            this.setState({slop:Up})
-    }
-    render(){
-        const ele = (<div style={{margin:"5px",width: '100%',height: '62px',background: '#FFFFFF 0% 0% no-repeat padding-box',boxShadow: '0px 3px 12px #1425401A',borderRadius: '8px',opacity: '1',display:'flex',justifyContent:"space-between"}}>
-                    <div style={{padding:"10px"}}>
-                    <img style = {{height:'20px',width:'40px',borderRadius:'4px'}} src={this.props.countryFlag} alt={this.props.countryName}/>
-                    <h4 style={{display:"inline",marginLeft:"15px",paddingBottom:"10px"}}>{this.props.countryName}</h4><br/>
-                    <div style={{fontSize:"13px",margin:"5px"}}>
-                     <span>{this.state.affectedStats} Affected</span> | <span>{this.state.recoveredStats} Recovered</span></div></div>
-                    <div style={{alignSelf:"center"}}>
-                    <img style={{marginRight:"20px"}}src={this.state.slope}/></div>
-                    </div>
-                    );
-        return (ele);
-    }
-}
-               
+// import Down from '../assets/Down.svg';
+import './CountryCard.css';
+          
 class CountryCard extends React.Component{
     
-        constructor(props){
-            super(props);
-            this.state={data:null};
-        }
+    constructor(props){
+        super(props);
+        this.state={data:null};
+    }
     
     componentDidMount(){
-        fetch('https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search').then((response)=>{return response.json();}).then((data)=>{
-          this.setState({data:data});  
-        });
+        fetch('https://corona.lmao.ninja/v2/countries?sort=country')
+        .then((response)=>{return response.json();})
+        .then((data)=>{
+        	data = data.map(function(e,idx){
+   				return ({
+   					"country":e["country"],
+					"total_cases":e["cases"],
+					"total_recovered":e["recovered"],
+					"flag":e["countryInfo"]["flag"],
+				});	   	
+   			});
+   		data.sort((e1,e2)=>{return (e2['total_cases']-e1['total_cases']);});
+   	this.setState({data:data});
+   	});
+    }
+    
+    filter  = ()=>{
+    		let filter_txt=document.getElementById('search-box').value.toUpperCase();
+    		let blocks = document.getElementsByClassName('country-block');
+    		for(let i=0;i<blocks.length;i++){
+    			let name = blocks[i].innerText.split('\n')[0].toUpperCase();
+    			if(name.indexOf(filter_txt)>-1)
+    				blocks[i].style.display='';
+    			else
+    				blocks[i].style.display='none';
+    		}
     }
     
     render(){
-            var ele;
-            if(this.state.data!=null){
-                ele = this.state.data["data"]['rows'].map(function(e,idx){return (<Card key={idx} countryName={e['country']} countryFlag={e['flag']} affectedStats={e['total_cases']} recoveredStats={e['total_recovered']} slope={Up}/>)});
-            }
-            
-        return (
-            <div style={{overflowY:"scroll",overflowX:"hidden",width:"340px",height: "480px",padding:"10px",background: '#FFFFFF 0% 0% no-repeat padding-box',boxShadow: '0px 3px 12px #1425401A',borderRadius:'8px',margin:"15px"}}>{ele}</div>
+     	        let ele=null;
+     	        if(this.state.data){
+     	        	ele = this.state.data.map(function(e,idx){ return(
+     	        	<div key={idx} className='country-block'><div className='blocks'>
+                    <div style={{padding:"10px"}}>
+                    <img id='country-flag' src={e['flag']} alt={e['country']}/>
+                    <h4 id='country-name'>{e['country']}</h4><br/>
+                    <div style={{fontSize:"13px",margin:"5px"}}>
+                    <span>{e['total_cases']} Affected</span> | <span>{e['total_recovered']} Recovered</span></div></div>
+                    <div style={{alignSelf:"center"}}>
+                    <img style={{marginRight:"20px"}} src={Up}/></div>
+                    </div></div>
+                    );
+                  });
+              }
+     	  return (
+        
+            <div className='country-container'>
+           <center><input type='text' id='search-box' onKeyUp={this.filter} placeholder='Search Country'/></center><br/>
+            {ele}
+            </div>
                );
     }
 }
 export default CountryCard;
-

@@ -20,7 +20,7 @@ class Recovery extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://corona.lmao.ninja/all')
+        axios.get('https://corona.lmao.ninja/v2/all')
         .then(response => {
             const data = response.data;
             this.setState({data});

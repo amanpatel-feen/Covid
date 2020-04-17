@@ -16,7 +16,7 @@ const AllCases = () => {
 
   const fetchAll = async () => {
     dataA = await fetchGlobalCases();
-    console.log(dataA.cases);
+    console.log(dataA);
     setHello(dataA.cases);
     console.log(hello);
   };
