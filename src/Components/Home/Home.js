@@ -9,7 +9,7 @@ import SocialCard from '../Socialcard/SocialCard';
 import MapCard from '../Mapcard/MapCard'
 import GraphCard from '../Graphcard/GraphCard'
 import Newscard from '../NewsandUpdates/Newscard'
-import Twitter from '../Twittes/Twittes'
+import Twitter from '../Twittercard/Twitter'
 import "./Home.css"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

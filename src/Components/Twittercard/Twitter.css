@@ -1,0 +1,8 @@
+.twittsdiv {
+  display: flex;
+  flex-direction: column;
+  /* height: 480px; */
+  overflow: scroll;
+  margin-top: 20px;
+  width:220px;
+}
