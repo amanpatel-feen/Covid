@@ -1,98 +1,48 @@
-.Card {
-  display: flex;
-  background-color: white;
-  box-shadow: 0px 5px 20px #1425401A;
-  border-radius: 8px;
-  opacity: 1;
-  padding: 10px;
-  width: 210px;
-  align-items: center;
-  margin: 10px;
-   
-}
-.CardData{
-  margin: 15px auto 0 10px;
-  font-size: 14px;
-}
-
-.h2{
-  text-align: left;
-}
-
-/* @media (max-width: 794px) {
+@media only screen and (min-width: 601px){
   .Card {
-    padding: 10px 65px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 5px 20px #1425401A;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 10px;
+    width: 210px;
+    align-items: center;
     margin: 10px;
-    box-shadow: 5px 5px 5px #ccccccfb;
-    display: inline-block;
+    /* margin-left: 20%; */
+     
+  }
+  .CardData{
+    margin: 15px auto 0 10px;
+    font-size: 14px;
+  }
+  
+  .h2{
     text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
   }
 }
 
-@media (max-width: 764px) {
+@media only screen and (max-width: 600px) {
   .Card {
-    padding: 10px 55px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 5px 20px #1425401A;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 10px;
+    width: 210px;
+    align-items: center;
     margin: 10px;
-    box-shadow: 5px 5px 5px #ccccccfb;
-    display: inline-block;
-    text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
+    margin-left: 20%;
+     
   }
+  .CardData{
+    margin: 15px auto 0 10px;
+    font-size: 14px;
+  }
+  
+  .h2{
+    text-align: left;
+  }
+  
 }
-@media (max-width: 704px) {
-  .Card {
-    padding: 10px 50px;
-    margin: 8px;
-    box-shadow: 4px 4px 4px #ccccccfb;
-    display: inline-block;
-    text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 663px) {
-  .Card {
-    padding: 10px 45px;
-    margin: 7px;
-    box-shadow: 3px 3px 3px #ccccccfb;
-    display: inline-block;
-    text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
-    font-size: 90%;
-  }
-}
-
-@media (max-width: 602px) {
-  .Card {
-    padding: 10px 70px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px #ccccccfb;
-    display: inline-block;
-    text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 522px) {
-  .Card {
-    padding: 10px 80px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px #ccccccfb;
-    display: inline-block;
-    text-align: left;
-    border-radius: 20px;
-    line-height: 15px;
-    background-color: #fff;
-  }
-} */

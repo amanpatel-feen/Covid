@@ -45,7 +45,7 @@ class CountryCard extends React.Component{
      	        	ele = this.state.data.map(function(e,idx){ return(
      	        	<div key={idx} className='country-block'><div className='blocks'>
                     <div style={{padding:"10px"}}>
-                    <img id='country-flag' src={e['flag']} alt={e['country']}/>
+                    <img className="flag" id='country-flag' src={e['flag']} alt={e['country']} align='left'/>
                     <h4 id='country-name'>{e['country']}</h4><br/>
                     <div style={{fontSize:"13px",margin:"5px"}}>
                     <span>{e['total_cases']} Affected</span> | <span>{e['total_recovered']} Recovered</span></div></div>

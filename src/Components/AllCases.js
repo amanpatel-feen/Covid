@@ -9,6 +9,7 @@ import graph3 from '../assets/Graph 3.svg'
 import { fetchGlobalCases } from "./helper/apicalls";
 import { useState } from "react";
 import { useEffect } from "react";
+import "./Allcases.css";
 let dataA;
 
 const AllCases = () => {
@@ -27,7 +28,7 @@ const AllCases = () => {
   return (
     <div style={{height:"20px"}}>
       {dataA ? (
-        <div style={{ display:"flex",padding:"10px" }}>
+        <div className="Allcases-container">
           <Card title="Total Cases" src={up} src1={graph} value={dataA.cases} />
           <Card title="Recovered" src={down} src1={graph1} value={dataA.recovered} />
           <Card title="Active Cases" src={up} src1={graph2} value={dataA.active} />
