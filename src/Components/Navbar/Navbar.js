@@ -1,24 +1,36 @@
-import React ,{Component} from 'react';
-import './Navbar.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import icon from '../../assets/virus.svg'
+import React from "react";
+import "./Navbar.css";
+import icon from "../../assets/virus.svg";
+import { Link } from "react-router-dom";
 
-class Nav extends Component {
-    render(){
-        return(
-                <div className="navbar">
-                    <div className="icon"><img src={icon} alt="COVID'19"/></div>
-                    <div><span>COVID'19</span></div>
-                    <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href='/FAQ'>FAQ</a></li>
-                        <li><a href='/HELPFUL-LINKS'>HELPFUL LINKS</a></li>
-                    </ul>
-                </div>
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <div className="icon">
+        <img src={icon} alt="earth's antivirus" />
+      </div>
+      <div>
+        <span>COVID'19</span>
+      </div>
+      <ul>
+        <li>
+          <Link to="/" className="itsnav">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/faq" className="itsnav">
+            FAQ
+          </Link>
+        </li>
+        <li>
+          <Link to="/helpfullinks" className="itsnav">
+            HelpFull Links
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-            
-        )
-    }
-}
-
-export default Nav
+export default Navbar;

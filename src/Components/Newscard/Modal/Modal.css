@@ -1,0 +1,28 @@
+.modal-box{
+	position:absolute;
+	width:60%;
+	height:60%;
+	background-color:#AAA;
+	top:20%;
+	left:20%;	
+	border-radius:10px;
+}
+.close-btn{
+	font-size:25px;
+	border:1px;
+	float:right;
+	font-weight:bold;
+	color:aqua;
+	margin:5px;
+	border-radius:10px;
+	background-color:#FFF;
+	text-align:center;
+}
+.close-btn:hover{
+	background-color:aqua;
+	color:#FFF;
+	
+}
+.content{
+	margin:20px;
+}

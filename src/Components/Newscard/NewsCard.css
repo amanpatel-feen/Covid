@@ -1,0 +1,116 @@
+@media only screen and (max-width:600px){
+	.container{
+		width: 370px;
+		height: 310px;
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		box-shadow: 0px 5px 20px #1425401A;
+		border-radius: 8px;
+		opacity: 1;
+		display:flex;
+		margin-left: 25px;
+		margin-top:15px;
+		align-content:center;
+	}
+	
+	.container div{
+		align-items: center;
+		margin-top:10%;
+	}
+	
+	.container h4{
+		width: 75px;
+		height: 10px;
+		padding-top:0px;
+		background: #FFEAEB 0% 0% no-repeat padding-box;
+		border-radius: 8px;
+		font: Bold 8px/9px Montserrat;
+		letter-spacing: 0px;
+		color: #FF0019;
+		opacity: 1;
+		}
+	.container h2{
+		width: 170px;
+		height: 49px;
+		text-align: left;
+		font: smaller 8px/12px Montserrat;
+		letter-spacing: 0px;
+		color: #30313A;
+		opacity: 1;
+	}
+	#image{
+		width: 156px;
+		height: 185px;
+		margin-top: 20px;
+	}
+	.container button{
+		text-align: left;
+		font: Regular 14px/27px Montserrat;
+		letter-spacing: 0px;
+		color: #FF0019;
+		opacity: 1;
+		background-color: transparent;
+		border: none;
+		float: left;
+		padding-top: 15px;
+		margin-top:40px;
+	}
+
+}
+
+@media only screen and (min-width:601px){
+	.container{
+		width: 435px;
+		height: 310px;
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		box-shadow: 0px 5px 20px #1425401A;
+		border-radius: 8px;
+		opacity: 1;
+		display:flex;
+		margin-left: 10px;
+		align-content:center;
+	}
+	
+	.container div{
+		align-items: center;
+		margin-top:10%;
+	}
+	
+	.container h4{
+		width: 125px;
+		height: 30px;
+		padding-top:20px;
+		background: #FFEAEB 0% 0% no-repeat padding-box;
+		border-radius: 8px;
+		font: Bold 12px/15px Montserrat;
+		letter-spacing: 0px;
+		color: #FF0019;
+		opacity: 1;
+		}
+	.container h2{
+		width: 258px;
+		height: 49px;
+		text-align: left;
+		font: SemiBold 18px/27px Montserrat;
+		letter-spacing: 0px;
+		color: #30313A;
+		opacity: 1;
+	}
+	#image{
+		width: 156px;
+		height: 185px;
+		margin-top: 20px;
+	}
+	.container button{
+		text-align: left;
+		font: Regular 14px/27px Montserrat;
+		letter-spacing: 0px;
+		color: #FF0019;
+		opacity: 1;
+		background-color: transparent;
+		border: none;
+		float: left;
+		padding-top: 15px;
+	}
+
+}
+

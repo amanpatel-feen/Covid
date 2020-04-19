@@ -8,7 +8,7 @@ import Recovery from '../RecoveryCard/Recoverycard'
 import SocialCard from '../Socialcard/SocialCard';
 import MapCard from '../Mapcard/MapCard'
 import GraphCard from '../Graphcard/GraphCard'
-import Newscard from '../NewsandUpdates/Newscard'
+import Newscard from '../Newscard/NewsCard'
 import Twitter from '../Twittercard/Twitter'
 import "./Home.css"
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,7 +30,7 @@ class Home extends React.Component{
 	render(){
   		return (
 				 <div className="container-fluid">
-					
+					<Navbar />
                     <div className="home-container">
                         <div className="main-wrapper">
                             <div className="Wrapper">
@@ -50,12 +50,16 @@ class Home extends React.Component{
                 
                                 
                             </div>
-                            <GraphCard country={this.state.country}/>
+                            <div className="GraphandNews">
+                                 <GraphCard country={this.state.country}/>
+                                 <Newscard />
+                            </div>
+                            
                             
                         </div>
                         <div className="Recoveryandtwitter">
                             <Recovery />
-                            <Twitter />
+                            <SocialCard />
                         </div>
                     </div>
 

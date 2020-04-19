@@ -14,7 +14,7 @@ import React from "react";
 
 const Twitter = () => {
   return (
-    <div className="twittsdiv">
+    <div className="tweets-container">
       <span>
         <TwitterTimelineEmbed
           sourceType="profile"

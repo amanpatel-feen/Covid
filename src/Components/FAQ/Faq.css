@@ -1,0 +1,110 @@
+.questions {
+    color: rgba(255, 0, 25, 0.8);
+    font-weight: bold;
+  }
+  .questions:hover {
+    cursor: pointer;
+  }
+  .container {
+    box-shadow: 5px 5px 5px 5px #ccccccfb !important;
+    background-color: #fff !important;
+    border-radius: 50px 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .container:hover {
+    box-shadow: 10px 10px 10px 10px #ccccccfb !important;
+    background-color: #fff !important;
+    border-radius: 50px 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  /* .makedecnone {
+    text-decoration: none;
+    outline: none;
+  } */
+  .tollnumber {
+    background: rgba(255, 0, 25, 0.8);
+    color: white;
+    border-radius: 10px 10px;
+  }
+  
+  .makehoverline {
+    color: rgba(255, 0, 25, 1);
+    margin: 1%, 0 0 0;
+    font-size: 45px;
+    font-weight: bolder;
+  }
+  .makehoverline:hover {
+    text-decoration: none;
+    animation: makelessop 3s linear 1s infinite;
+    cursor: pointer;
+  }
+  .faqquestion {
+    color: #2c3335;
+    font-size: 45px;
+    font-weight: bolder;
+  }
+  
+  @keyframes makelessop {
+    0% {
+      color: rgba(255, 0, 25, 1);
+    }
+    20% {
+      color: rgba(255, 0, 25, 0.3);
+    }
+    50% {
+      color: rgba(255, 0, 25, 0.2);
+    }
+    80% {
+      color: rgba(255, 0, 25, 0.1);
+    }
+    90% {
+      color: rgba(255, 255, 255, 1);
+    }
+    100% {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  
+  @media (max-width: 435px) {
+    .makehoverline {
+      color: rgba(255, 0, 25, 1);
+      margin: 1%, 0 0 0;
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    .faqquestion {
+      color: #2c3335;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+  }
+  @media (max-width: 320px) {
+    .makehoverline {
+      color: rgba(255, 0, 25, 1);
+      margin: 1%, 0 0 0;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+    .faqquestion {
+      color: #2c3335;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .faqquestion {
+      color: #2c3335;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+  }
+  @media (max-width: 769px) {
+    .faqquestion {
+      color: #2c3335;
+      font-size: 35px;
+      font-weight: bolder;
+    }
+  }

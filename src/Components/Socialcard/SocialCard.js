@@ -1,19 +1,19 @@
 import React from "react";
-import classes from "./SocialCard.css";
+import "./SocialCard.css";
 // import Card from "../../shared/Card/Card";
-// import { FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 
 const SocialCard = () => {
-  let Handels = ['WHO','PMOIndia','realDonaldTrump','TOIIndiaNews','ABPNews'];
+  let Handels = ['WHO','PMOIndia','realDonaldTrump'];
   return (
-    <div className={classes.TwitterFeeds}>
-        <div className={classes.TwitterFeedsHeading}>
+    <div className="TwitterFeeds">
+        <div className="TwitterFeedsHeading">
         <p>Latest Feeds</p>
-        {/* <span><FaTwitter /></span> */}
+        <span><FaTwitter /></span>
         </div>
-        <div className={classes.TweetList}>
+        <div className="TweetList">
         {Handels.map(handler => (
           <div key={handler}>
           <TwitterTimelineEmbed sourceType="profile" screenName={handler} options={{ height: 400, tweetLimit: 1 }} noHeader noFooter

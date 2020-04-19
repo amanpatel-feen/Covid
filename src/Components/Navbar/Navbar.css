@@ -1,49 +1,51 @@
-.navbar{
+.navbar {
     display: flex;
-     align-items: center; 
-     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 20px #686C8526;
+    align-items: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 20px #686c8526;
     opacity: 1;
-    
-}
-nav a{
-    /* text-align: center; */
-    padding:0px 18px;
-    text-decoration: none;
-    color:#646979;
-    font-weight: bold;
-    text-align: center;
-}
-.icon{
-    margin: 10px ;
-}
-span:first-child{
+  }
+  
+  .icon {
+    margin: 10px;
+  }
+  span:first-child {
     top: 20px;
-left: 90px;
-width: 100px;
-height: 27px;
-text-align: left;
-font: SemiBold 22px/27px Montserrat;
-letter-spacing: 0px;
-color: #FF0019;
-text-transform: uppercase;
-opacity: 1;
-}
-
-ul li{
+    left: 90px;
+    width: 100px;
+    height: 27px;
+    text-align: left;
+    font: SemiBold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #ff0019;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  
+  .itsnav {
+    color: #ff0019;
+    font-weight: bold;
+    outline: none !important;
+  }
+  .itsnav:hover {
+    text-decoration: none !important;
+    color: #ff0019;
+    outline: none !important;
+  }
+  
+  ul li {
     display: inline;
-
-padding: 20px;
-}
-ul{
-    margin:auto;
-}
-ul li a{
+    padding: 20px;
+  }
+  ul {
+    margin: auto;
+  }
+  ul li Link {
     text-decoration: none;
     text-align: left;
-font: Medium 14px/18px Montserrat;
-letter-spacing: 0px;
-color: #FF0019;
-text-transform: uppercase;
-opacity: 1;
-}
+    font: Medium 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #ff0019;
+    text-transform: uppercase;
+    opacity: 1;
+  }

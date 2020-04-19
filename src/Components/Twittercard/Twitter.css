@@ -1,8 +1,24 @@
-.twittsdiv {
-  display: flex;
-  flex-direction: column;
-  /* height: 480px; */
-  overflow: scroll;
-  margin-top: 20px;
-  width:220px;
+@media only screen and (max-width: 600px){
+  .tweets-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* height: 480px; */
+    overflow: scroll;
+    margin-top: 20px;
+    width:220px;
+    margin-left: 25px;
+  }
+  
 }
+@media only screen and (min-width: 601px){
+  .tweets-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 480px; */
+    overflow: scroll;
+    margin-top: 20px;
+    width:220px;
+  }
+  
+}
+
