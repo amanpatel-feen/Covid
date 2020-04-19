@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "../Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 
 export default function HelpfulLinks() {
   return (
     <div>
-      <Nav />
+      <Navbar />
       <br />
       <br />
       <div style={{ display: "flex", flexDirection: "column" }}>

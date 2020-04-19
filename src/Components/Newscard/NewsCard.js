@@ -12,14 +12,16 @@ class NewsCard extends React.Component{
     render(){
      	     
      	  return (	
-     	  	<div className='container'>
-     	  	<div><img id='image' src={Fever}/></div>
-     	  	<div>
-     	  	<h4>News & Updates</h4>
-     	  	<h2>5 Symptoms of Corona Virus that you should know.</h2><br />
-     	  	<button onClick={this.toggle} >Read More <img src={Arrow}/></button>
-     	  	</div>
-     	  	<Modal show={this.state.show} handler={this.toggle}/>
+     	  	<div className='Newscard-container'>
+					<div>
+						<img id='image' src={Fever}/>
+					</div>
+					<div>
+						<h4>News & Updates</h4>
+						<h2>5 Symptoms of Corona Virus that you should know.</h2><br />
+						<button onClick={this.toggle} >Read More <img src={Arrow}/></button>
+					</div>
+				<Modal show={this.state.show} handler={this.toggle}/>
      	  	</div>	
      	  );
     }

@@ -1,5 +1,5 @@
 @media only screen and (max-width:600px){
-	.container{
+	.Newscard-container{
 		width: 370px;
 		height: 310px;
 		background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -12,12 +12,12 @@
 		align-content:center;
 	}
 	
-	.container div{
+	.Newscard-container div{
 		align-items: center;
 		margin-top:10%;
 	}
 	
-	.container h4{
+	.Newscard-container h4{
 		width: 75px;
 		height: 10px;
 		padding-top:0px;
@@ -28,7 +28,7 @@
 		color: #FF0019;
 		opacity: 1;
 		}
-	.container h2{
+	.Newscard-container h2{
 		width: 170px;
 		height: 49px;
 		text-align: left;
@@ -42,7 +42,7 @@
 		height: 185px;
 		margin-top: 20px;
 	}
-	.container button{
+	.Newscard-container button{
 		text-align: left;
 		font: Regular 14px/27px Montserrat;
 		letter-spacing: 0px;
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (min-width:601px){
-	.container{
+	.Newscard-container{
 		width: 435px;
 		height: 310px;
 		background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -70,12 +70,12 @@
 		align-content:center;
 	}
 	
-	.container div{
+	.Newscard-container div{
 		align-items: center;
 		margin-top:10%;
 	}
 	
-	.container h4{
+	.Newscard-container h4{
 		width: 125px;
 		height: 30px;
 		padding-top:20px;
@@ -86,7 +86,7 @@
 		color: #FF0019;
 		opacity: 1;
 		}
-	.container h2{
+	.Newscard-container h2{
 		width: 258px;
 		height: 49px;
 		text-align: left;
@@ -100,7 +100,7 @@
 		height: 185px;
 		margin-top: 20px;
 	}
-	.container button{
+	.Newscard-container button{
 		text-align: left;
 		font: Regular 14px/27px Montserrat;
 		letter-spacing: 0px;
