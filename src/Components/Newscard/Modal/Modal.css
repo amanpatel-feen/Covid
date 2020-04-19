@@ -1,28 +1,34 @@
 .modal-box{
 	position:absolute;
-	width:60%;
-	height:60%;
+	width:50%;
+	height:500px;
 	background-color:#AAA;
 	top:20%;
 	left:20%;	
 	border-radius:10px;
+	
 }
 .close-btn{
 	font-size:25px;
 	border:1px;
-	float:right;
+	float:left;
 	font-weight:bold;
-	color:aqua;
 	margin:5px;
 	border-radius:10px;
 	background-color:#FFF;
 	text-align:center;
 }
 .close-btn:hover{
-	background-color:aqua;
-	color:#FFF;
+	background-color: red;
+	color:black;
 	
 }
+
+.content h2{
+	color: red;
+
+}
+
 .content{
-	margin:20px;
+	padding: 20px;
 }

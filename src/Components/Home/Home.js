@@ -7,6 +7,8 @@ import MapCard from '../Mapcard/MapCard'
 import GraphCard from '../Graphcard/GraphCard'
 import Newscard from '../Newscard/NewsCard'
 import "./Home.css"
+
+import Helpfullink from '../HelpfulLinks/Helpfullink'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -55,6 +57,7 @@ class Home extends React.Component{
                         <div className="Recoveryandtwitter">
                             <Recovery />
                             <SocialCard />
+                            
                         </div>
                     </div>
 

@@ -1,10 +1,10 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar";
+import React,{Component} from 'react';
 
-export default function HelpfulLinks() {
-  return (
+class Helpful extends Component {
+    render(){
+        return(
     <div>
-      <Navbar />
+      
       <br />
       <br />
       <div style={{ display: "flex", flexDirection: "column" }}>
@@ -75,5 +75,9 @@ export default function HelpfulLinks() {
         </center>
       </div>
     </div>
-  );
+            
+        )
+    }
 }
+
+export default Helpful

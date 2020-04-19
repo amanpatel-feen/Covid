@@ -1,4 +1,37 @@
-@media only screen and (max-width:600px){
+@media only screen and (max-width:400px){
+  .TwitterFeeds{
+    padding: 16px 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 20px #1425401A;
+    border-radius: 8px;
+    opacity: 1;
+    margin-top:20px;
+    /* margin-left:25px; */
+    width: 370px;
+  }
+  
+  .TwitterFeedsHeading{
+    display: flex;
+    font-weight: bold;
+    padding: 1rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
+  }
+  
+  .TwitterFeedsHeading span{
+    font-size: 18px;
+    padding-left: 0.6rem;
+    align-self: center;
+    color:#54B5F5 
+  }
+  
+  .TweetList{
+    height: 520px;
+    overflow-y: scroll;
+  }  
+}
+
+@media only screen and (min-width:401px) and (max-width:600px){
   .TwitterFeeds{
     padding: 16px 0;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -28,7 +61,8 @@
   .TweetList{
     height: 520px;
     overflow-y: scroll;
-  }  
+  } 
+
 }
 
 @media only screen and (min-width:601px){
